@@ -1,58 +1,51 @@
-/* Base */
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #000000;  /* FUNDO PRETO */
-  color: #003366;             /* TEXTO AZUL ESCURO */
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f2f2; /* fundo claro */
+  color: #003366; /* azul escuro no texto */
 }
 
-/* Container para alinhar */
 .container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: auto;
+  padding: 20px;
 }
 
-/* Cabeçalho */
 header {
-  background-color: #003366;  /* AZUL ESCURO */
+  background-color: #000000; /* cabeçalho preto */
   padding: 20px 0;
 }
 
 .logo {
-  height: 50px;
+  height: 60px;
   vertical-align: middle;
 }
 
 nav {
-  float: right;
   margin-top: 10px;
+  float: right;
 }
 
 nav a {
-  color: #ffffff;
+  color: white;
   text-decoration: none;
-  margin-left: 30px;
+  margin-left: 25px;
+  font-size: 1.1em;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #1e90ff; /* azul claro ao passar o mouse */
 }
 
-/* Conteúdo principal */
-main {
-  padding: 60px 0;
-}
-
-h1 {
-  font-size: 2.2em;
+main h1 {
+  font-size: 2.5em;
   margin-bottom: 10px;
-  color: #003366;
 }
 
-p {
-  font-size: 1.2em;
+main p {
+  font-size: 1.3em;
   line-height: 1.6;
 }
