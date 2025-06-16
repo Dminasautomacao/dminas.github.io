@@ -1,45 +1,58 @@
+/* Base */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #000000; /* fundo preto */
   margin: 0;
   padding: 0;
-  color: #003366; /* azul escuro nos textos */
+  font-family: Arial, sans-serif;
+  background-color: #000000;  /* FUNDO PRETO */
+  color: #003366;             /* TEXTO AZUL ESCURO */
 }
 
+/* Container para alinhar */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Cabeçalho */
 header {
-  background-color: #003366; /* cabeçalho azul escuro */
-  padding: 15px 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  background-color: #003366;  /* AZUL ESCURO */
+  padding: 20px 0;
 }
 
 .logo {
   height: 50px;
+  vertical-align: middle;
+}
+
+nav {
+  float: right;
+  margin-top: 10px;
 }
 
 nav a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
-  margin-left: 20px;
+  margin-left: 30px;
   font-weight: bold;
-  transition: 0.3s;
 }
 
 nav a:hover {
   text-decoration: underline;
 }
 
+/* Conteúdo principal */
 main {
-  padding: 40px 30px;
+  padding: 60px 0;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.2em;
   margin-bottom: 10px;
+  color: #003366;
 }
 
 p {
   font-size: 1.2em;
+  line-height: 1.6;
 }
