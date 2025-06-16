@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dminas Equipamentos Industriais</title>
+  <title>Dminas Automação Industrial</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header>
     <div class="container">
-      <img src="img/logo.png" alt="Logo Dminas" class="logo" />
+      <img src="img/logo.png" class="logo" alt="Logo Dminas" />
       <nav>
-        <a href="#">Início</a>
+        <a href="#inicio">Início</a>
         <a href="#servicos">Serviços</a>
         <a href="#produtos">Produtos</a>
         <a href="#contato">Contato</a>
@@ -19,36 +19,48 @@
     </div>
   </header>
 
-  <main>
-    <section id="sobre">
-      <h1>Bem-vindo à Dminas</h1>
-      <p>Especialistas em automação industrial, montagem de fábricas e painéis elétricos. Atendemos todo o Brasil com excelência técnica e compromisso.</p>
-    </section>
+  <section id="inicio" class="banner">
+    <div class="overlay">
+      <h1>Dminas Equipamentos Industriais</h1>
+      <p>Automação, Montagem e Soluções Inteligentes</p>
+      <a href="#contato" class="btn">Fale Conosco</a>
+    </div>
+  </section>
 
-    <section id="servicos">
-      <h2>Serviços</h2>
-      <ul>
-        <li>Automação de processos industriais</li>
-        <li>Montagem de painéis elétricos</li>
-        <li>Projetos de linhas de produção</li>
-        <li>Manutenção industrial</li>
-      </ul>
-    </section>
+  <section id="servicos" class="section">
+    <h2>Nossos Serviços</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Automação Industrial</h3>
+        <p>Projetamos e implementamos sistemas automatizados para fábricas.</p>
+      </div>
+      <div class="card">
+        <h3>Montagem de Painéis</h3>
+        <p>Montagem elétrica personalizada com alto padrão de qualidade.</p>
+      </div>
+      <div class="card">
+        <h3>Projetos e Consultoria</h3>
+        <p>Soluções sob medida para processos industriais e engenharia.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="produtos">
-      <h2>Produtos</h2>
-      <p>Em breve: catálogo online com estoque, filtros e carrinho.</p>
-    </section>
+  <section id="produtos" class="section">
+    <h2>Produtos</h2>
+    <p>Em breve: catálogo completo com estoque, filtros e compras online.</p>
+  </section>
 
-    <section id="contato">
-      <h2>Fale conosco</h2>
-      <p>Entre em contato por WhatsApp para orçamentos e dúvidas.</p>
-      <a class="whatsapp" href="https://wa.me/5561996437678" target="_blank">📲 WhatsApp</a>
-    </section>
-  </main>
+  <section id="contato" class="section">
+    <h2>Contato</h2>
+    <p>Entre em contato via WhatsApp para orçamentos ou dúvidas.</p>
+    <a href="https://wa.me/5561996437678" target="_blank" class="btn">📲 WhatsApp</a>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Dminas Equipamentos Industriais. Todos os direitos reservados.</p>
+    <p>&copy; 2025 Dminas Automação. Todos os direitos reservados.</p>
   </footer>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a class="whatsapp-float" href="https://wa.me/5561996437678" target="_blank">💬</a>
 </body>
 </html>
