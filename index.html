@@ -1,104 +1,133 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DMinas Automação Industrial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      background: #f5f7fa;
-      color: #222;
+      font-family: 'Roboto', sans-serif;
+      background-color: #1a1a1a;
+      color: #ffffff;
     }
+
     header {
-      background-color: #003366; /* azul escuro */
-      padding: 20px 40px;
-      color: white;
-      display: flex;
-      align-items: center;
-      gap: 20px;
+      text-align: center;
+      padding: 40px 20px 20px;
+      background-color: #000000;
     }
+
     header img {
-      height: 50px;
-      width: auto;
+      max-width: 180px;
+      margin-bottom: 10px;
     }
+
     header h1 {
       font-size: 28px;
-      margin: 0;
-      font-weight: 700;
-      letter-spacing: 1.5px;
+      margin: 10px 0 5px;
+      letter-spacing: 1px;
     }
+
+    header p {
+      font-size: 14px;
+      color: #ccc;
+    }
+
     main {
-      padding: 40px;
-      max-width: 900px;
+      padding: 30px 20px;
+      max-width: 960px;
       margin: auto;
     }
+
     section {
       margin-bottom: 40px;
     }
+
     h2 {
-      color: #003366;
-      border-bottom: 3px solid #0059b3;
+      font-size: 22px;
+      color: #ffffff;
+      border-bottom: 2px solid #555;
       padding-bottom: 8px;
     }
-    p {
-      font-size: 1.1em;
-      line-height: 1.6em;
-      color: #444;
+
+    p, li {
+      font-size: 16px;
+      color: #ddd;
+      line-height: 1.6;
     }
+
+    ul {
+      padding-left: 20px;
+    }
+
     footer {
+      background-color: #000000;
+      color: #aaa;
       text-align: center;
       padding: 20px;
-      background-color: #003366;
-      color: white;
-      font-size: 0.9em;
+      font-size: 14px;
     }
+
     a {
-      color: #0059b3;
+      color: #00aaff;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
+    }
+
+    .whatsapp {
+      font-size: 18px;
+      margin-top: 10px;
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    .whatsapp:hover {
+      background-color: #1ebc5d;
     }
   </style>
 </head>
 <body>
   <header>
-    <!-- Substitua "logo.png" pelo caminho real da logo -->
-    <img src="logo.png" alt="Logo DMinas Automação" />
+    <img src="logo.png" alt="Logo DMinas" />
     <h1>DMinas Automação Industrial</h1>
+    <p>Equipamentos Industriais, Automação e Montagem</p>
   </header>
+
   <main>
     <section>
       <h2>Quem Somos</h2>
-      <p>
-        A DMinas Automação é especializada em soluções de automação industrial, montagem de fábricas, painéis elétricos e sistemas para mineração.
-      </p>
+      <p>A DMinas é uma empresa focada em soluções de automação industrial, montagem de painéis elétricos e suporte técnico para ambientes industriais e de mineração. Trabalhamos com seriedade, precisão e compromisso com resultados.</p>
     </section>
+
     <section>
       <h2>Serviços</h2>
       <ul>
-        <li>Projetos de automação personalizados</li>
-        <li>Montagem e manutenção de painéis elétricos</li>
-        <li>Automação para mineração e indústrias</li>
-        <li>Consultoria técnica e suporte especializado</li>
+        <li>Projetos e execução de automação industrial</li>
+        <li>Montagem de fábricas e linhas de produção</li>
+        <li>Instalação e manutenção de painéis elétricos</li>
+        <li>Equipamentos industriais personalizados</li>
       </ul>
     </section>
+
     <section>
       <h2>Contato</h2>
-      <p>Email: contato@dminas.com.br</p>
-      <p>Telefone: (61) 996439-7678</p>
-      <p>
-        Endereço: Rua Exemplo, 123 - Belo Horizonte - MG
-      </p>
-      <p>
-        <a href="https://wa.me/55619964397678" target="_blank" rel="noopener">Fale conosco pelo WhatsApp</a>
-      </p>
+      <p>Telefone/WhatsApp: <strong>(61) 99643-7678</strong></p>
+      <a class="whatsapp" href="https://wa.me/5561996437678" target="_blank">Chamar no WhatsApp</a>
     </section>
   </main>
+
   <footer>
-    &copy; 2025 DMinas Automação Industrial - Todos os direitos reservados
+    &copy; 2025 DMinas Automação Industrial. Todos os direitos reservados.
   </footer>
 </body>
 </html>
