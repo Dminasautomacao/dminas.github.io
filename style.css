@@ -1,108 +1,84 @@
-/* Resetando margens e padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Corpo da página */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
 }
-
-/* Header */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  background-color: #111;
+  padding: 10px 30px;
 }
-
-/* Navegação */
-nav {
-    background-color: #555;
-    padding: 10px;
+header .logo {
+  height: 60px;
+  margin-right: 20px;
 }
-
-nav ul {
-    list-style-type: none;
-    text-align: center;
+header h1 {
+  font-size: 1.5rem;
 }
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+.produtos {
+  padding: 30px;
+  text-align: center;
 }
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px;
-    transition: background-color 0.3s;
+.produtos h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
-
-nav ul li a:hover,
-nav ul li a.active {
-    background-color: #888;
+.grade-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
-
-/* Seções */
-section {
-    padding: 20px;
-    margin: 20px;
+.produto {
+  border: 1px solid #fff;
+  padding: 15px;
 }
-
-.sobre, .qualidades, .galeria {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.produto img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: contain;
 }
-
-.sobre p {
-    font-size: 1.2em;
-    line-height: 1.6;
+.produto p {
+  margin: 10px 0;
+  font-weight: bold;
 }
-
-.sobre h2, .qualidades h2, .galeria h2 {
-    margin-bottom: 10px;
-    font-size: 1.5em;
+.produto a {
+  background-color: #a00;
+  color: #fff;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 5px;
 }
-
-ul {
-    padding-left: 20px;
+.servicos {
+  padding: 40px 30px;
+  background-color: #111;
 }
-
-footer {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+.servicos h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
-
-/* Galeria - Fotos grandes e uma embaixo da outra */
-.galeria .foto {
-    width: 100%;  /* Faz as fotos ocuparem toda a largura da página */
-    margin: 20px 0;  /* Espaço entre as fotos */
-    text-align: center;  /* Centraliza a imagem e descrição */
+.descricao-servico {
+  text-align: center;
+  margin-bottom: 40px;
 }
-
-.galeria .foto img {
-    width: 100%; /* Faz as imagens ocuparem toda a largura */
-    max-width: 100%; /* Limita a largura ao máximo da tela */
-    height: auto; /* Mantém a proporção das imagens */
-    border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve para um efeito visual agradável */
+.chamada {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
 }
-
-.galeria .foto p {
-    font-size: 1.2em;  /* Tamanho da fonte da descrição */
-    margin-top: 10px;  /* Espaço entre a imagem e a descrição */
-    color: #555;  /* Cor do texto da descrição */
-    line-height: 1.6;  /* Altura da linha para melhorar a leitura */
+.chamada h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.chamada p {
+  margin-bottom: 15px;
+}
+.chamada a {
+  background-color: #a00;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
 }
