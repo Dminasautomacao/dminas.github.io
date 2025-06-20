@@ -1,135 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <title>Serviços - Preto e Branco</title>
-  <style>
-    body {
-      background-color: #000;
-      color: #fff;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      display: flex;
-      align-items: center;
-      background-color: #111;
-      padding: 10px 30px;
-      box-shadow: 0 2px 5px rgba(255 255 255 / 0.1);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    header img.logo {
-      height: 50px;
-      margin-right: 20px;
-      filter: invert(1); /* Inverte cores caso a logo seja preta */
-    }
-    header h1 {
-      font-size: 1.8rem;
-      font-weight: 700;
-      margin: 0;
-      letter-spacing: 1.1px;
-    }
-
-    main {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    h2 {
-      margin-bottom: 40px;
-      font-weight: 700;
-      font-size: 2.5rem;
-    }
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-      gap: 40px;
-    }
-    .service-item {
-      background: #111;
-      padding: 30px 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(255 255 255 / 0.1);
-      transition: background 0.3s ease;
-    }
-    .service-item:hover {
-      background: #222;
-    }
-    .service-icon {
-      width: 60px;
-      height: 60px;
-      margin-bottom: 20px;
-      stroke: #fff;
-      fill: none;
-      stroke-width: 2;
-    }
-    .service-title {
-      font-size: 1.4rem;
-      font-weight: 600;
-      margin-bottom: 15px;
-      text-transform: uppercase;
-      letter-spacing: 1.2px;
-    }
-    .service-desc {
-      font-size: 1rem;
-      line-height: 1.5;
-      color: #ccc;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>DMINAS Equipamentos Industriais</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
-    <img class="logo" src="logo.png" alt="Logo" />
-    <h1>Sua Empresa</h1>
+    <img src="logo.png" alt="Logo DMINAS" class="logo">
+    <h1>DMINAS Equipamentos Industriais</h1>
   </header>
 
-  <main>
-    <h2>Serviços</h2>
-
-    <div class="services-grid">
-
-      <div class="service-item">
-        <svg class="service-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" >
-          <circle cx="32" cy="32" r="30" />
-          <path d="M20 32l8 8 16-16" />
-        </svg>
-        <div class="service-title">Automação Industrial</div>
-        <div class="service-desc">
-          Desenvolvimento e implantação de sistemas para otimizar processos industriais.
-        </div>
+  <section class="produtos">
+    <h2>Produtos</h2>
+    <div class="grade-produtos">
+      <div class="produto">
+        <img src="https://webautomacaoindustrial.com/wp-content/uploads/2021/03/clp.png" alt="CLP">
+        <p>CLP</p>
+        <a href="https://wa.me/5561996437678" target="_blank">Fale com a Web</a>
       </div>
-
-      <div class="service-item">
-        <svg class="service-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" >
-          <rect x="12" y="12" width="40" height="40" />
-          <path d="M20 32h24" />
-          <path d="M32 20v24" />
-        </svg>
-        <div class="service-title">Montagem de Painéis</div>
-        <div class="service-desc">
-          Fabricação e instalação de painéis elétricos sob medida para sua fábrica.
-        </div>
+      <div class="produto">
+        <img src="https://webautomacaoindustrial.com/wp-content/uploads/2021/03/ihm.png" alt="IHM">
+        <p>IHM'S</p>
+        <a href="https://wa.me/5561996437678" target="_blank">Fale com a Web</a>
       </div>
-
-      <div class="service-item">
-        <svg class="service-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" >
-          <path d="M16 48h32M32 16v32" />
-          <circle cx="32" cy="32" r="10" />
-        </svg>
-        <div class="service-title">Mineração</div>
-        <div class="service-desc">
-          Soluções inteligentes para automação e controle em mineração.
-        </div>
+      <div class="produto">
+        <img src="https://webautomacaoindustrial.com/wp-content/uploads/2021/03/servo-motor.png" alt="Servo Motor">
+        <p>Servo Motor</p>
+        <a href="https://wa.me/5561996437678" target="_blank">Fale com a Web</a>
       </div>
-
+      <div class="produto">
+        <img src="https://webautomacaoindustrial.com/wp-content/uploads/2021/03/servo-drive.png" alt="Servo Drive">
+        <p>Servo Drive</p>
+        <a href="https://wa.me/5561996437678" target="_blank">Fale com a Web</a>
+      </div>
+      <div class="produto">
+        <img src="https://webautomacaoindustrial.com/wp-content/uploads/2021/03/soft-starter.png" alt="Soft Starter">
+        <p>Soft Starter</p>
+        <a href="https://wa.me/5561996437678" target="_blank">Fale com a Web</a>
+      </div>
+      <div class="produto">
+        <img src="https://webautomacaoindustrial.com/wp-content/uploads/2021/03/inversor.png" alt="Inversor de Frequência">
+        <p>Inversor de Frequência</p>
+        <a href="https://wa.me/5561996437678" target="_blank">Fale com a Web</a>
+      </div>
+      <div class="produto">
+        <img src="https://webautomacaoindustrial.com/wp-content/uploads/2021/03/contator-media.png" alt="Contator">
+        <p>Contator de média tensão</p>
+        <a href="https://wa.me/5561996437678" target="_blank">Fale com a Web</a>
+      </div>
+      <div class="produto">
+        <img src="https://webautomacaoindustrial.com/wp-content/uploads/2021/03/braco-potencia.png" alt="Braço de potência">
+        <p>Braço de potência de inversor de média tensão</p>
+        <a href="https://wa.me/5561996437678" target="_blank">Fale com a Web</a>
+      </div>
+      <div class="produto">
+        <img src="https://webautomacaoindustrial.com/wp-content/uploads/2021/03/disjuntor.png" alt="Disjuntor">
+        <p>Disjuntor de Média Tensão</p>
+        <a href="https://wa.me/5561996437678" target="_blank">Fale com a Web</a>
+      </div>
     </div>
-  </main>
+  </section>
+
+  <section class="servicos">
+    <h2>Conheça os nossos serviços</h2>
+    <div class="descricao-servico">
+      <h3>Reparo em Equipamentos</h3>
+      <p>Profissionais técnicos altamente qualificados e treinados, somos especialistas em reparar Inversores de Frequência, Chaves de Partida, CLP e Servo-Conversores de diversas marcas e segmentos de mercado.</p>
+    </div>
+    <div class="chamada">
+      <h3>Seu equipamento apresenta falhas?</h3>
+      <p>Fale com a Web através do botão ao lado e nos mande uma mensagem, nossa equipe vai te responder o mais rápido possível.</p>
+      <a href="https://wa.me/5561996437678" target="_blank">Mande uma mensagem</a>
+    </div>
+  </section>
 
 </body>
 </html>
