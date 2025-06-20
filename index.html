@@ -1,43 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo | Dminas Automação</title>
-  <link rel="stylesheet" href="CSS/style.css">
+  <meta charset="UTF-8" />
+  <title>Site Preto e Branco</title>
+  <style>
+    body {
+      background-color: #000; /* fundo preto */
+      color: #fff; /* texto branco */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    header {
+      margin-bottom: 40px;
+    }
+    img.logo {
+      max-width: 200px;
+      filter: invert(1); /* caso a logo seja preta, inverte pra branca */
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 1px solid #fff;
+    }
+    a:hover {
+      color: #ccc;
+      border-color: #ccc;
+    }
+  </style>
 </head>
 <body>
-  <h1>Catálogo de Produtos – Dminas Automação</h1>
-  <div class="grid">
+  <header>
+    <!-- Coloque aqui o caminho da logo do seu pai -->
+    <img class="logo" src="logo.png" alt="Logo" />
+  </header>
 
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Schneider_Electric_Contactor.jpg" alt="Contator 3RT1033">
-      <h2>Contator Siemens 3RT1033-1AK60</h2>
-      <p>Série S2 – até 50 A, bobina 110 V. Ideal para comandos industriais trifásicos.</p>
-      <a class="btn-whats" href="https://wa.me/55SEUNUMERO?text=Olá! Gostaria de mais informações sobre o Contator 3RT1033">Orçar via WhatsApp</a>
-    </div>
+  <h1>Bem-vindo ao site preto e branco</h1>
+  <p>Conteúdo simples e elegante.</p>
 
-    <div class="card">
-      <img src="https://static.se.com/us/en/local/marketing/industrial-automation/images/pstx.jpg" alt="Soft Starter PSTX">
-      <h2>Soft Starter ABB PSTX</h2>
-      <p>Solução premium para controle de partida suave, proteção térmica e rede inteligente.</p>
-      <a class="btn-whats" href="https://wa.me/55SEUNUMERO?text=Olá! Tenho interesse na Soft Starter ABB PSTX">Orçar via WhatsApp</a>
-    </div>
-
-    <div class="card">
-      <img src="https://cdn.sick.com/media/IMG/IM0059142.PNG" alt="Sensor Indutivo">
-      <h2>Sensor Indutivo M12</h2>
-      <p>Detecção de objetos metálicos com distância de até 4 mm. Alta durabilidade IP67.</p>
-      <a class="btn-whats" href="https://wa.me/55SEUNUMERO?text=Olá! Tenho interesse no Sensor Indutivo M12">Orçar via WhatsApp</a>
-    </div>
-
-    <div class="card">
-      <img src="https://www.fabostore.com.br/media/catalog/product/cache/3/image/650x650/9df78eab33525d08d6e5fb8d27136e95/i/n/inversor-de-frequencia.jpg" alt="Inversor de Frequência">
-      <h2>Inversor de Frequência Weg CFW-08</h2>
-      <p>Controle de motores trifásicos, até 7,5 CV, 220 V ou 380 V. Compacto e robusto.</p>
-      <a class="btn-whats" href="https://wa.me/55SEUNUMERO?text=Olá! Gostaria de orçamento do Inversor WEG CFW-08">Orçar via WhatsApp</a>
-    </div>
-
-  </div>
+  <footer>
+    <p>© 2025 Sua Empresa</p>
+    <p><a href="mailto:contato@suaempresa.com">contato@suaempresa.com</a></p>
+  </footer>
 </body>
 </html>
