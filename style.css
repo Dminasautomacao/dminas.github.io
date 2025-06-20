@@ -4,18 +4,14 @@ body {
   background-color: #000;
   color: #fff;
 }
-header {
-  display: flex;
-  align-items: center;
+.header-centered {
+  text-align: center;
+  padding: 10px 0;
   background-color: #111;
-  padding: 10px 30px;
 }
-header .logo {
-  height: 60px;
-  margin-right: 20px;
-}
-header h1 {
-  font-size: 1.5rem;
+.logo-centered {
+  max-height: 80px;
+  max-width: 200px;
 }
 .produtos {
   padding: 30px;
