@@ -2,46 +2,101 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <title>Site Preto e Branco</title>
+  <title>Serviços - Preto e Branco</title>
   <style>
     body {
-      background-color: #000; /* fundo preto */
-      color: #fff; /* texto branco */
-      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
     }
-    header {
+    h2 {
       margin-bottom: 40px;
+      font-weight: 700;
+      font-size: 2.5rem;
     }
-    img.logo {
-      max-width: 200px;
-      filter: invert(1); /* caso a logo seja preta, inverte pra branca */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
     }
-    a {
-      color: #fff;
-      text-decoration: none;
-      border-bottom: 1px solid #fff;
+    .service-item {
+      background: #111;
+      padding: 30px 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255 255 255 / 0.1);
+      transition: background 0.3s ease;
     }
-    a:hover {
+    .service-item:hover {
+      background: #222;
+    }
+    .service-icon {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 20px;
+      stroke: #fff;
+      fill: none;
+      stroke-width: 2;
+    }
+    .service-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+    }
+    .service-desc {
+      font-size: 1rem;
+      line-height: 1.5;
       color: #ccc;
-      border-color: #ccc;
     }
   </style>
 </head>
 <body>
-  <header>
-    <!-- Coloque aqui o caminho da logo do seu pai -->
-    <img class="logo" src="logo.png" alt="Logo" />
-  </header>
 
-  <h1>Bem-vindo ao site preto e branco</h1>
-  <p>Conteúdo simples e elegante.</p>
+  <h2>Serviços</h2>
 
-  <footer>
-    <p>© 2025 Sua Empresa</p>
-    <p><a href="mailto:contato@suaempresa.com">contato@suaempresa.com</a></p>
-  </footer>
+  <div class="services-grid">
+
+    <div class="service-item">
+      <svg class="service-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" >
+        <circle cx="32" cy="32" r="30" />
+        <path d="M20 32l8 8 16-16" />
+      </svg>
+      <div class="service-title">Automação Industrial</div>
+      <div class="service-desc">
+        Desenvolvimento e implantação de sistemas para otimizar processos industriais.
+      </div>
+    </div>
+
+    <div class="service-item">
+      <svg class="service-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" >
+        <rect x="12" y="12" width="40" height="40" />
+        <path d="M20 32h24" />
+        <path d="M32 20v24" />
+      </svg>
+      <div class="service-title">Montagem de Painéis</div>
+      <div class="service-desc">
+        Fabricação e instalação de painéis elétricos sob medida para sua fábrica.
+      </div>
+    </div>
+
+    <div class="service-item">
+      <svg class="service-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" >
+        <path d="M16 48h32M32 16v32" />
+        <circle cx="32" cy="32" r="10" />
+      </svg>
+      <div class="service-title">Mineração</div>
+      <div class="service-desc">
+        Soluções inteligentes para automação e controle em mineração.
+      </div>
+    </div>
+
+  </div>
+
 </body>
 </html>
